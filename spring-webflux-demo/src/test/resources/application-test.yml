@@ -1,0 +1,18 @@
+# 测试环境配置 - 使用MySQL
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/webflux_demo_test
+    username: webflux_user
+    password: webflux_password
+    properties:
+      serverTimezone: Asia/Shanghai
+      useUnicode: true
+      characterEncoding: utf8mb4
+  
+  data:
+    redis:
+      enabled: false  # 测试环境禁用Redis
+
+logging:
+  level:
+    com.javalaabs.webflux: DEBUG

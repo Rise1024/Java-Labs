@@ -1,0 +1,52 @@
+# 生产环境配置
+spring:
+  r2dbc:
+    url: r2dbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:webflux_demo}
+    username: ${DB_USERNAME:webflux_user}
+    password: ${DB_PASSWORD:webflux_password}
+    properties:
+      serverTimezone: Asia/Shanghai
+      useUnicode: true
+      characterEncoding: utf8mb4
+      # 生产环境连接池配置
+      maxSize: 20
+      initialSize: 5
+      maxIdleTime: 30m
+  
+  data:
+    redis:
+      enabled: true
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      database: ${REDIS_DATABASE:0}
+      timeout: 5000ms
+      lettuce:
+        pool:
+          max-active: 16
+          max-idle: 8
+          min-idle: 2
+          max-wait: 3000ms
+
+# 生产环境日志配置
+logging:
+  level:
+    com.javalaabs.webflux: INFO
+    org.springframework.data.r2dbc: WARN
+    root: WARN
+  file:
+    name: /var/log/webflux-demo/application.log
+    max-size: 100MB
+    max-history: 30
+
+# 生产环境监控配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  endpoint:
+    health:
+      show-details: when_authorized
+  security:
+    enabled: true

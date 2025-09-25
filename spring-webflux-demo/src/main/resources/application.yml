@@ -1,0 +1,87 @@
+# Spring WebFlux Demo 应用配置
+server:
+  port: 8080
+  netty:
+    connection-timeout: 10s
+    idle-timeout: 300s
+
+spring:
+  application:
+    name: spring-webflux-demo
+  
+  # 数据库配置 - MySQL
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/java_labs
+    username: root
+    password: 1234
+    properties:
+      serverTimezone: Asia/Shanghai
+      useUnicode: true
+      characterEncoding: utf8mb4
+    
+  # Redis 配置 (可选)
+  data:
+    redis:
+      enabled: false  # 默认关闭，避免启动失败
+      host: localhost
+      port: 6379
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+          max-wait: -1ms
+  
+  # Jackson 配置
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: false
+    deserialization:
+      fail-on-unknown-properties: false
+      accept-empty-string-as-null-object: true
+  
+  # WebFlux 配置
+  webflux:
+    multipart:
+      max-in-memory-size: 1MB
+      max-disk-usage-per-part: 10MB
+    static-path-pattern: /static/**
+
+# 日志配置
+logging:
+  level:
+    com.javalaabs.webflux: DEBUG
+    org.springframework.data.r2dbc: DEBUG
+    org.springframework.web.reactive: INFO
+    reactor.netty: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+# Actuator 监控配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,info,prometheus
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+    metrics:
+      enabled: true
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+      percentiles:
+        http.server.requests: 0.5, 0.95, 0.99
+      slo:
+        http.server.requests: 10ms, 50ms, 100ms, 200ms, 500ms, 1s, 2s, 5s
+  prometheus:
+    metrics:
+      export:
+        enabled: true
