@@ -25,9 +25,10 @@
 
 <div align="center">
 
-| 项目 | 技术栈 | 学习重点 | 完成度 |
-|------|--------|----------|--------|
-| **[🚀 Spring WebFlux Demo](./spring-webflux-demo)** | Spring Boot 3.5.6<br/>Spring WebFlux<br/>R2DBC<br/>Redis | 响应式编程<br/>非阻塞I/O<br/>函数式编程<br/>实时数据流 | 95% |
+| 项目 | 技术栈 | 学习重点 | 完成度  |
+|------|--------|----------|------|
+| **[🚀 Spring WebFlux Demo](./spring-webflux-demo)** | Spring Boot 3.5.6<br/>Spring WebFlux<br/>R2DBC<br/>Redis | 响应式编程<br/>非阻塞I/O<br/>函数式编程<br/>实时数据流 | 100% |
+| **[🔐 Java Encryption](./java-encryption)** | Java 17<br/>JUnit 5<br/>Bouncy Castle<br/>SLF4J | 现代加密算法<br/>编码转换技术<br/>密码学安全<br/>JDK17特性 | 100% |
 
 
 </div>
@@ -125,6 +126,50 @@
   </tr>
 </table>
 
+### 🔐 加密与编码技术
+
+<table>
+  <tr>
+    <th width="25%">技术领域</th>
+    <th width="45%">核心文章</th>
+    <th width="15%">难度</th>
+    <th width="15%">状态</th>
+  </tr>
+  <tr>
+    <td rowspan="3"><strong>密码学实战</strong></td>
+    <td><a href="./blog/加密方式/01-现代Java加密算法实战指南.md">🔐 现代Java加密算法实战指南</a></td>
+    <td>⭐⭐⭐⭐</td>
+    <td>✅ 完成</td>
+  </tr>
+  <tr>
+    <td><a href="./blog/加密方式/02-Java编码转换技术全解析.md">🔤 Java编码转换技术全解析</a></td>
+    <td>⭐⭐⭐</td>
+    <td>✅ 完成</td>
+  </tr>
+  <tr>
+    <td><a href="./blog/加密方式/03-密码学安全实践指南.md">🛡️ 密码学安全实践指南</a></td>
+    <td>⭐⭐⭐⭐⭐</td>
+    <td>✅ 完成</td>
+  </tr>
+</table>
+
+### 📊 学习笔记
+
+<table>
+  <tr>
+    <th width="25%">技术领域</th>
+    <th width="45%">核心文章</th>
+    <th width="15%">难度</th>
+    <th width="15%">状态</th>
+  </tr>
+  <tr>
+    <td><strong>高并发系统</strong></td>
+    <td><a href="./blog/学习笔记/千万级数据实时统计系统实战.md">📊 千万级数据实时统计系统实战</a></td>
+    <td>⭐⭐⭐⭐⭐</td>
+    <td>✅ 完成</td>
+  </tr>
+</table>
+
 ### 🎯 技术博客特色
 
 - **🔍 源码级解析** - 深入Spring源码，理解实现机制
@@ -133,7 +178,6 @@
 - **📊 性能优化** - 深入分析性能瓶颈和优化策略
 
 > 📚 **更多技术内容请访问**: [dongsheng.online](https://dongsheng.online) - 持续分享Java技术干货与架构实战经验
-
 
 
 ---

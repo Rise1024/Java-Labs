@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.051" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="socksProxyHost" value="127.0.0.1"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ht/IdeaProjects/ME/Java-Labs/java-encryption/target/test-classes:/Users/ht/IdeaProjects/ME/Java-Labs/java-encryption/target/classes:/Users/ht/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/ht/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/ht/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/ht/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/ht/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/ht/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/ht/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/ht/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/ht/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/ht/.m2/repository/org/passay/passay/1.6.4/passay-1.6.4.jar:/Users/ht/.m2/repository/org/springframework/security/spring-security-crypto/6.3.4/spring-security-crypto-6.3.4.jar:/Users/ht/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/ht/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/ht/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/ht/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/ht/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ht/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/ht/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/ht/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/ht/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/ht/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/ht/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:"/>
+    <property name="https.proxyPort" value="7897"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/Users/ht/Library/Java/JavaVirtualMachines/corretto-17.0.12/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/ht/IdeaProjects/ME/Java-Labs/java-encryption/target/surefire/surefirebooter-20250926120316929_3.jar /Users/ht/IdeaProjects/ME/Java-Labs/java-encryption/target/surefire 2025-09-26T12-03-16_897-jvmRun1 surefire-20250926120316929_1tmp surefire_0-20250926120316929_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="BaseConverterTest"/>
+    <property name="surefire.test.class.path" value="/Users/ht/IdeaProjects/ME/Java-Labs/java-encryption/target/test-classes:/Users/ht/IdeaProjects/ME/Java-Labs/java-encryption/target/classes:/Users/ht/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/ht/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/ht/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/ht/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/ht/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/ht/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/ht/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/ht/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/ht/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/ht/.m2/repository/org/passay/passay/1.6.4/passay-1.6.4.jar:/Users/ht/.m2/repository/org/springframework/security/spring-security-crypto/6.3.4/spring-security-crypto-6.3.4.jar:/Users/ht/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/ht/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/ht/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/ht/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/ht/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ht/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/ht/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/ht/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/ht/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/ht/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/ht/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ht"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Users/ht/Library/Java/JavaVirtualMachines/corretto-17.0.12/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
+    <property name="basedir" value="/Users/ht/IdeaProjects/ME/Java-Labs/java-encryption"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/ht/IdeaProjects/ME/Java-Labs/java-encryption/target/surefire/surefirebooter-20250926120316929_3.jar"/>
+    <property name="user.script" value="Hans"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.12+7-LTS"/>
+    <property name="user.name" value="ht"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.12.7.1"/>
+    <property name="localRepository" value="/Users/ht/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/7w/ts32zjl92tj19dlppcc0pgr40000gn/T/"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="/Users/ht/IdeaProjects/ME/Java-Labs/java-encryption"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="socksProxyPort" value="7897"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ht/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.12+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="http.proxyPort" value="7897"/>
+  </properties>
+  <testcase name="testDecimalToBinary" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.03">
+    <system-out><![CDATA[12:03:17.150 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 2-进制: 1010
+12:03:17.152 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 2-进制: 1111
+12:03:17.152 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 2-进制: -1010
+]]></system-out>
+  </testcase>
+  <testcase name="testConvertBase" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.001">
+    <system-out><![CDATA[12:03:17.156 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 2-进制 1010 转换为十进制: 10
+12:03:17.156 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 16-进制: A
+12:03:17.156 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 8-进制 10 转换为十进制: 8
+12:03:17.156 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 10-进制: 8
+12:03:17.156 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 10-进制 35 转换为十进制: 35
+12:03:17.156 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 36-进制: Z
+]]></system-out>
+  </testcase>
+  <testcase name="testBinaryToDecimal" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.001">
+    <system-out><![CDATA[12:03:17.158 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 2-进制 1010 转换为十进制: 10
+12:03:17.158 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 2-进制 1111 转换为十进制: 15
+12:03:17.158 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 2-进制 0 转换为十进制: 0
+]]></system-out>
+  </testcase>
+  <testcase name="testBigIntegerConversion" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.001">
+    <system-out><![CDATA[12:03:17.159 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 大数16-进制 FFFFFFFFFF 转换为2-进制: 1111111111111111111111111111111111111111
+12:03:17.159 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 大数2-进制 1111111111111111111111111111111111111111 转换为16-进制: FFFFFFFFFF
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllBaseConversions" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.0">
+    <system-out><![CDATA[12:03:17.160 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 2-进制: 11111111
+12:03:17.160 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 8-进制: 377
+12:03:17.160 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 16-进制: FF
+12:03:17.160 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 32-进制: 7V
+12:03:17.160 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 数字 0 编码为 Base62: 47
+]]></system-out>
+  </testcase>
+  <testcase name="testHexToDecimal" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.0">
+    <system-out><![CDATA[12:03:17.161 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 16-进制 A 转换为十进制: 10
+12:03:17.161 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 16-进制 FF 转换为十进制: 255
+12:03:17.161 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 16-进制 100 转换为十进制: 256
+]]></system-out>
+  </testcase>
+  <testcase name="testErrorHandling" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.004"/>
+  <testcase name="testDecimalToHex" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.0">
+    <system-out><![CDATA[12:03:17.166 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 16-进制: A
+12:03:17.166 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 16-进制: FF
+12:03:17.166 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 十进制 0 转换为 16-进制: 100
+]]></system-out>
+  </testcase>
+  <testcase name="testBase62" classname="com.javalaabs.crypto.encoding.BaseConverterTest" time="0.0">
+    <system-out><![CDATA[12:03:17.167 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- 数字 0 编码为 Base62: 3D7
+12:03:17.167 [main] DEBUG com.javalaabs.crypto.encoding.BaseConverter -- Base62 3D7 解码为数字: 12345
+]]></system-out>
+  </testcase>
+</testsuite>
